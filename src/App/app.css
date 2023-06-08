@@ -1,0 +1,21 @@
+body {
+    background-color: #1a1a1a;
+    margin:0px;
+    padding:0px;
+}
+
+.fields {
+    margin-top: 20px;
+}
+
+.app-main {
+    background-color: #1a1a1a;
+}
+
+.window-popup {
+    line-height: 39px!important;
+}
+
+.main {
+    margin-top: 70px;
+}
