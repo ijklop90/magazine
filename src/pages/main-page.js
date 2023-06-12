@@ -11,7 +11,7 @@ const MainPage = () => {
                 <img className="main-logo" alt="logo" src={logo}></img>
                 <span className="main-logo-text">Shoppy Alliance</span>
                 </div>
-                <Link to='/magazine/cat'>
+                <Link to='/magazine'>
                     <div to className="waves-effect   main-btn platform waves-light btn">
                     <i className="material-icons">shop</i> <span>К покупкам</span>
                     </div>
