@@ -1,6 +1,6 @@
 import React  from "react";
 import { useParams } from "react-router-dom";
-import Product from "../components/Product";
+import Unit from "../components/Unit/Unit";
 
 
 const UnitPage = (props) => {
@@ -13,11 +13,12 @@ const id = useParams().id
         <div className="row">
             <h1>Товар: {shops[id].name}</h1>
             {console.log(id)}
-            <Product 
+            <Unit 
                 key={id}
                 shops={shops}
                 setShop={props.setShop}
                 shop={shops[id]}
+                id={id}
                 {...shops[id]}
              />
         </div>

@@ -28,3 +28,16 @@ text-overflow: ellipsis;
 .count-shop {
     font-size: 20px;
 }
+
+.platform {
+    border-radius: 0px;
+}
+
+.product-btn {
+    margin: 2px;
+}
+
+.icons {
+    height:30px;
+    margin-top:3px
+}

@@ -1,54 +1,65 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Popup from '../Popup'
+import logo from '../../img/logo.png'
 import './navbar.css'
 
 const Navbar = (props)=>  {
   const [toggle, setToggle] = useState(false)
-  const {shops} = props
+  const {shops, stackPlatform, setStackPlatform} = props
+
 
   if(!shops) return null;
 return(
   <nav className="nav-main">
     <div className="nav-wrapper">
-      <a href="/" className="brand-logo">Logo</a>
+      <a href="/magazine" className="brand-logo">
+        <div>
+          <img className="logo" alt="Logo" src={logo}></img> <span className="logo-text">Shoppy Alliance</span>
+          </div>
+          </a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
       {toggle && (
         <li>
           <ul className="collection popup z-depth-3">
-        {shops.filter(shop=>shop['count']===1).map(shop=>
-            <Popup 
-              shops={shops} 
-              setShops={props.setShops} 
-              key={shop.id} 
-              counts={props.counts}  
-              {...shop}/>)}
-          {
-          Boolean(shops.filter(shop=>shop['count']===1).length) 
+            {stackPlatform.map((platform, idx)=>
+              platform.find(el=>el===true)
+                ?
+                <Popup 
+                  key={idx}
+                  id={idx}
+                  shops={shops} 
+                  platform={platform}
+                  stackPlatform={stackPlatform}
+                  setStackPlatform={setStackPlatform}
+                />
+              :
+              platform)}
+
+
+          {toggle && 
+          stackPlatform.map(platform=>
+          platform.find(el=>el===true))
           ? <Link onClick={()=> setToggle(!toggle)}
             className="btn waves-effect shop-link" 
-            to="/shop">
-              GO TO SHOP
+            to="/magazine/shop">
+              ОФОРМИТЬ ЗАКАЗ
           </Link>
-         :<li className="popup-li collection-item avatar">
+         :
+         <li className="popup-li collection-item avatar">
           <div className="row">
-          Cart is empty
+          Корзина пуста
           </div>
-         </li>
-        }
+         </li>}
           </ul>
         </li>)}
         <li >
           <Link id="indicator" onClick={()=> setToggle(!toggle)} to="#"> 
-            {shops.filter(shop=>shop['count']===1).length ?
-            <span data-badge-caption=" " className="new ind-badge z-depth-1 badge red">
-              {shops.filter(shop=>shop['count']===1).length}</span>:<div></div>
-            }
             <i className="material-icons">shopping_cart</i>{toggle}
           </Link>
         </li>
-        <li key="1"><Link to="/">Main</Link></li>
-        <li key="2"><Link to="/cat">Catalogue</Link></li>
+        <li key="1"><Link to="/magazine">Главная</Link></li>
+        <li key="2"><Link to="/magazine/cat">Каталог</Link></li>
       </ul>
     </div>
   </nav>

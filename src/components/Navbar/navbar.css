@@ -20,3 +20,13 @@ span.badge.new {
 .ind-badge {
     margin-top:20px
 }
+
+.logo {
+    height: 50px;
+    margin-top: 5px;
+}
+
+.logo-text {
+    display: contents;
+    margin: 0px;
+}

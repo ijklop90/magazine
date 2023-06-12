@@ -1,22 +1,43 @@
 import React from "react";
-import { switchToCart } from "../../services/services-workers";
+import { getIcons } from "../../services/services-workers";
 import './popup.css'
 
 
 const Popup = (props) => {
-const {id, name, url, count, shops, setShops} = props
-const decrementData = {id, name, url, count:0}
+const {
+    id,
+    shops,
+    platform,
+    stackPlatform,
+    setStackPlatform
+    } = props
+
+const {url, name} = shops[id]
+
+const removeProduct = () => {
+    const newData = [false, false, false]
+    const newArr = stackPlatform.map((el,idx)=>
+        idx===id?el=newData:el)
+    setStackPlatform(newArr)
+
+}
+
+const selectedValue = platform.indexOf(true)
     return(
-            <li className="popup-li collection-item avatar">
-                {console.log(id, name, url, count)}
+        <li className="popup-li collection-item avatar">
             <div className="row">
             <div className="col s9">
                 <img src={url} alt="" className="circle"></img>
-                <p className="black-text"><strong className="label">Title: </strong>{name}</p>
+                <p className="black-text">
+                    <strong className="label">Title: {name}</strong><br/>
+                <span>
+                    <img alt={name} className="icon-popup" src={getIcons(selectedValue)}></img>
+                </span>
+            </p>
             </div>
             <div className="col s1">    
                 <button onClick={()=>{
-                    switchToCart(shops, decrementData, setShops)
+                    removeProduct()
                 }}
                     className="waves-effect  waves-light btn" 
                     >
@@ -25,7 +46,7 @@ const decrementData = {id, name, url, count:0}
             </div>
             <div className="col s1 offset-s1"></div>
             </div>
-            </li>
+        </li>
     )
 }
 
