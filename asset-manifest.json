@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/magazine/static/css/main.50e9290f.css",
-    "main.js": "/magazine/static/js/main.e6e498d4.js",
+    "main.js": "/magazine/static/js/main.534fd1d2.js",
     "static/media/logo.png": "/magazine/static/media/logo.ca45bcc4403a9bdb9f61.png",
     "static/media/gog.svg": "/magazine/static/media/gog.9a33eb43c012115f8e6dd20753b54f93.svg",
     "static/media/steam.svg": "/magazine/static/media/steam.e673f42dd24f9e4f727729dedec3df29.svg",
     "index.html": "/magazine/index.html",
     "main.50e9290f.css.map": "/magazine/static/css/main.50e9290f.css.map",
-    "main.e6e498d4.js.map": "/magazine/static/js/main.e6e498d4.js.map"
+    "main.534fd1d2.js.map": "/magazine/static/js/main.534fd1d2.js.map"
   },
   "entrypoints": [
     "static/css/main.50e9290f.css",
-    "static/js/main.e6e498d4.js"
+    "static/js/main.534fd1d2.js"
   ]
 }
