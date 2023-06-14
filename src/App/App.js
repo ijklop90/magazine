@@ -10,9 +10,10 @@ import { Route, Routes } from "react-router-dom";
 const App = () => {
 
     const getPlatforms = () => {
-    const newData = data.map(el=>el.platform)
-    return newData
+    const newData = data.map(el=>el.platform) 
+    return newData 
 }
+
 const [shops, setShops] = useState(data)
 const [stackPlatform, setStackPlatform] = useState(getPlatforms())
 

@@ -15,7 +15,7 @@ const CataloguePage = (props) => {
         <div className="fields">
             {
         shops.map((shop, idx)=>
-            <div className="col s3" key={shop.id}>
+            <div className="col m3 s12" key={shop.id}>
             <Product 
                 key={shop.id} 
                 shops={shops}

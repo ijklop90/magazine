@@ -1,14 +1,14 @@
 [
-  {"id": 1, "name": "NAME", "url": "https://via.placeholder.com/150/92c952", "count": 0, "platform":[false, false, false]},
-  {"id": 2, "name": "NAME", "url": "https://via.placeholder.com/150/771796", "count": 0, "platform":[false, false, false]},
-  {"id": 3, "name": "NAME", "url": "https://via.placeholder.com/150/24f355", "count": 0, "platform":[false, false, false]},
-  {"id": 4, "name": "NAME", "url": "https://via.placeholder.com/150/d32776", "count": 0, "platform":[false, false, false]},
-  {"id": 5, "name": "NAME", "url": "https://via.placeholder.com/150/f66b97", "count": 0, "platform":[false, false, false]},
-  {"id": 6, "name": "NAME", "url": "https://via.placeholder.com/150/56a8c2", "count": 0, "platform":[false, false, false]},
-  {"id": 7, "name": "NAME", "url": "https://via.placeholder.com/150/b0f7cc", "count": 0, "platform":[false, false, false]},
-  {"id": 8, "name": "NAME", "url": "https://via.placeholder.com/150/54176f", "count": 0, "platform":[false, false, false]},
-  {"id": 9, "name": "NAME", "url": "https://via.placeholder.com/150/51aa97", "count": 0, "platform":[false, false, false]},
-  {"id": 10, "name": "NAME", "url": "https://via.placeholder.com/150/810b14", "count": 0, "platform":[false, false, false]},
-  {"id": 11, "name": "NAME", "url": "https://via.placeholder.com/150/1ee8a4", "count": 0, "platform":[false, false, false]},
-  {"id": 12, "name": "NAME", "url": "https://via.placeholder.com/150/66b7d2", "count": 0, "platform":[false, false, false]}
+  {"id": 1, "name": "Red dead Redemption II", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/01.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 2, "name": "Assassin's Creed Valhalla", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/02.png", "count": 0, "platform":[false, false, false]},
+  {"id": 3, "name": "Dying Light 2", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/03.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 4, "name": "Atomic Heart", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/04.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 5, "name": "Need for Speed Unbound", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/05.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 6, "name": "Forza Horizon 5", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/06.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 7, "name": "FIFA 23", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/07.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 8, "name": "Hogwarts Legacy", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/08.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 9, "name": "Gran Turismo 7", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/09.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 10, "name": "Doom Eternal", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/10.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 11, "name": "Star Wars Jedi: Survivor", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/11.jpg", "count": 0, "platform":[false, false, false]},
+  {"id": 12, "name": "Shadow of the Tomb Rider", "url": "https://raw.githubusercontent.com/ijklop90/diplom/master/12.jpg", "count": 0, "platform":[false, false, false]}
 ]

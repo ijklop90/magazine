@@ -6,7 +6,7 @@ import logo from '../img/logo.png'
 const MainPage = () => {
     return(
         <div className="row">
-            <div className="col s4 offset-s4">
+            <div className="col s12 m4 offset-m4">
                 <div>
                 <img className="main-logo" alt="logo" src={logo}></img>
                 <span className="main-logo-text">Shoppy Alliance</span>
