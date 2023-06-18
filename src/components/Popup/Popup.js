@@ -2,7 +2,6 @@ import React from "react";
 import { getIcons } from "../../services/services-workers";
 import './popup.css'
 
-
 const Popup = (props) => {
 const {
     id,
@@ -51,3 +50,4 @@ const selectedValue = platform.indexOf(true)
 }
 
 export default Popup;
+

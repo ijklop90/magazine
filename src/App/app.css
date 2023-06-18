@@ -10,6 +10,7 @@ body {
 
 .app-main {
     background-color: #1a1a1a;
+    min-height: 90vh;
 }
 
 .window-popup {
@@ -18,4 +19,29 @@ body {
 
 .main {
     margin-top: 70px;
+}
+
+.logo-vk {
+    height:17px;
+    margin-top:10px;
+    margin-left:3px;
+    color: #fff;
+}
+
+#footer {
+    background-color: dimgray;
+    height: 50px;
+    margin-bottom: 0;
+    margin: 0 auto;
+    width:100%;
+}
+
+.copyright {
+    padding-top:15px;
+    color: #fff;
+    display: contents;
+}
+.wrapper-footer {
+    margin: 0 auto;
+    display: table;
 }

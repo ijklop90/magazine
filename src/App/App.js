@@ -2,10 +2,12 @@ import React, {useState} from "react";
 import Navbar from "../components/Navbar";
 import {UnitPage, MainPage, CataloguePage, ShopPage } from "../pages";
 import './app.css'
+import vk from '../img/vk.png'
+
 import data from '../data.json'
 
 
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 
 const App = () => {
 
@@ -20,7 +22,8 @@ const [stackPlatform, setStackPlatform] = useState(getPlatforms())
 
 
 return (
-        <div className="app-main">
+        <div>
+        <div className="app-main height-full">
             <Navbar  
                 setShops={setShops} 
                 shops={shops}
@@ -49,6 +52,13 @@ return (
                                 </div>
                             }/>
                 </Routes>
+            </div>
+            </div>
+            <div id="footer">
+                <div className="wrapper-footer">
+                    <div className="copyright">© 2023 | Все права защищены |</div> 
+                    <Link to={'#footer'} ><img class="logo-vk" alt={vk} src={vk}/></Link>
+                </div>
             </div>
         </div>
     )

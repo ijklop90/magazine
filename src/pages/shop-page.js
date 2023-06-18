@@ -8,9 +8,6 @@ const ShopPage = (props)=> {
     const [visible, isVisible] = useState(true)
     const [open, isOpen] = useState(true)
 
-
-
-
     return(
         <div>
             {open && 
@@ -52,5 +49,4 @@ const ShopPage = (props)=> {
         </div>
     )
 }
-
 export default ShopPage;
