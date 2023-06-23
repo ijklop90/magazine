@@ -2,6 +2,8 @@ import React from "react";
 import { getIcons } from "../../services/services-workers";
 import './popup.css'
 
+import Price from "../Price";
+
 const Popup = (props) => {
 const {
     id,
@@ -25,10 +27,13 @@ const selectedValue = platform.indexOf(true)
     return(
         <li className="popup-li collection-item avatar">
             <div className="row">
-            <div className="col s9">
+            <div className="col s9 wrap-popup">
                 <img src={url} alt="" className="circle"></img>
                 <p className="black-text">
                     <strong className="label">Title: {name}</strong><br/>
+                    <strong className="label">
+                        <Price />
+                    </strong>
                 <span>
                     <img alt={name} className="icon-popup" src={getIcons(selectedValue)}></img>
                 </span>

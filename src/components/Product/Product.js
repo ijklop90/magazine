@@ -2,7 +2,7 @@ import React  from "react";
 import { Link } from "react-router-dom";
 import './product.css'
 import Button from "../Button/Button";
-
+import Price from "../Price";
 
 
 
@@ -25,6 +25,7 @@ const Product = (props) => {
                         {name}
                     </p>
             </Link>
+        <Price />
         <Button
             shop={shop}
             id={id}
